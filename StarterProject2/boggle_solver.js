@@ -1,3 +1,13 @@
+/**
+ * Given a Boggle board and a dictionary, returns a list of available words in
+ * the dictionary present inside of the Boggle board.
+ * @param {string[][]} grid - The Boggle game board.
+ * @param {string[]} dictionary - The list of available words.
+ * @returns {string[]} solutions - Possible solutions to the Boggle board.
+ */
+
+
+
 // Adjacent matrix is square matrix utilised to describe a fintite graph
 var adjacent_matrix = [
     [-1, -1],
@@ -9,6 +19,7 @@ var adjacent_matrix = [
     [1, -1],
     [0, -1],
 ];
+
 
 
 /*
@@ -31,6 +42,7 @@ function isValidGrid(grid) {
 }
 
 
+
 /*
 This function converts the items in dictionary and letters in grid into
 same case i.e. lowercase
@@ -46,7 +58,6 @@ function lower(grid, dictionary) {
     dictionary[i] = dictionary[i].toLowerCase();
   }
 };
-
 
 
 // This function creates a trie data structure from the given dictionary
@@ -113,7 +124,7 @@ exports.findAllSolutions = function (grid, dictionary) {
     return [];
   }
 
-  // checks if the grid or dictionary is empty
+  // defects found in code review - line 128
   if (grid == null || dictionary == null) return solutions;
 
   // convert grid and dictionary into same case i.e. lower case
@@ -136,8 +147,7 @@ exports.findAllSolutions = function (grid, dictionary) {
   return solutions;
 };
 
-
-// Uncomment to see the output for different input
+// ucomment to see different outputs for different inputs
 /*
 var grid_2 = [
   ["T", "W", "Y", "R"],
