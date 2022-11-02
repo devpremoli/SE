@@ -1,13 +1,3 @@
-/**
- * Given a Boggle board and a dictionary, returns a list of available words in
- * the dictionary present inside of the Boggle board.
- * @param {string[][]} grid - The Boggle game board.
- * @param {string[]} dictionary - The list of available words.
- * @returns {string[]} solutions - Possible solutions to the Boggle board.
- */
-
-
-
 // Adjacent matrix is square matrix utilised to describe a fintite graph
 var adjacent_matrix = [
     [-1, -1],
@@ -19,7 +9,6 @@ var adjacent_matrix = [
     [1, -1],
     [0, -1],
 ];
-
 
 
 /*
@@ -40,7 +29,6 @@ function isValidGrid(grid) {
   }
   return true;
 }
-
 
 
 /*
@@ -149,6 +137,8 @@ exports.findAllSolutions = function (grid, dictionary) {
 };
 
 
+// Uncomment to see the output for different input
+/*
 var grid_2 = [
   ["T", "W", "Y", "R"],
   ["E", "N", "P", "H"],
@@ -373,3 +363,4 @@ console.log(" dictionary = ", dictionary_c1, "\n");
 console.log("Output = ");
 console.log(exports.findAllSolutions(grid_5, dictionary_c1));
 console.log("\n");
+*/
