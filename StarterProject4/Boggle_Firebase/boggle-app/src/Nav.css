@@ -1,0 +1,31 @@
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 35px;
+    padding: 20px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: #111;
+  
+    /* Animations */
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+  }
+  
+  .nav_username {
+    left: 45%;
+    color: aliceblue;
+  }
+  
+  .nav_avatar {
+    position: fixed;
+    right: 20px;
+    object-fit: contain;
+
+  }
+  .SignOut {
+    padding-top: 5%;
+    padding-right: 2%;
+  }

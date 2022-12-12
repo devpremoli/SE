@@ -1,0 +1,34 @@
+.Toggle-game-state {
+  text-align: center;
+  margin-top: -50pt;
+  margin-bottom: 25pt;
+}
+
+.Input-select-size {
+  margin-top: -28.4pt;
+  margin-left: 300pt;
+  margin-bottom: 25pt;
+}
+
+.Timed{
+  padding-top: 1pt;
+  color: #00695c;
+}
+
+.Timed-ingame{
+  padding-top: 35pt;
+  color: #00695c;
+}
+
+.Toggle-game-state2{
+  padding-top: 20pt;
+}
+
+.SignOut {
+  padding-left: 500pt;
+}
+.app__dropdown {
+  background-color: #455a64;
+  border-radius: 5px;
+  
+}

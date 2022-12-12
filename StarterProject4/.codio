@@ -1,0 +1,14 @@
+{
+    // This file is used to configure the three buttons along Codio's top menu.
+    // Run button configuration
+    "commands": {
+        "Run Node": "cd /home/codio/workspace/Boggle_Firebase/boggle-app; npm start "
+    },
+    // Preview button configuration
+    "preview": {
+        "Preview Website (static)": "https://lotuscalypso-coconutrelax-3000.codio.io",
+        "Preview Current File (static)": "https://lotuscalypso-coconutrelax-3000.codio.io"
+    },
+    // Debugger target button configuration
+    "debugger": [{"type":"NODEJS","command":"{{filepath}}","before":"","uuid":"20d5151f-c12d-d9a5-b1d6-e3832248ed81","name":"Debug Current NodeJS File"}]
+}
